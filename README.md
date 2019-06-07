@@ -1,2 +1,2 @@
 # Goal Tending
-An NBA news aggregation and stats app.
+An NBA News and Stats
