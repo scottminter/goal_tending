@@ -63,6 +63,12 @@ h1 {
                  0px 18px 23px rgba(0,0,0,0.1);
 }
 
+h5 {
+    letter-spacing: 5px;
+    color: white;
+    font-size: 1vw;
+}
+
 hr { 
     display: block; height: 1px;
     border: 0; border-top: 2px solid white;
