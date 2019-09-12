@@ -4,11 +4,11 @@ import Styles from './Header.module.css';
 
 const Header = (props) => {
   return (
-    <div className={Styles.Header}>
-      <span className={`${Styles.SiteName} ${Styles.Item}`}>HEADER</span>
-      <span className={`${Styles.Link}  ${Styles.Item}`}>News</span>
-      <span className={Styles.Link}>Stats</span>
-    </div>
+    <Row className={Styles.Header}>
+      <Col sm={8} className={`${Styles.SiteName} ${Styles.Item}`}>HEADER</Col>
+      <Col sm={1} className={`${Styles.Link}  ${Styles.Item}`}>News</Col>
+      <Col sm={1} className={`${Styles.Link} ${Styles.Item}`}>Stats</Col>
+    </Row>
   );
 };
 
