@@ -1,0 +1,14 @@
+.Header {
+  background: #1D428A;
+  height: 50px;
+  color: #FFFFFF;
+  padding: 10px;
+}
+
+.SiteName {
+  font-weight: bold;
+}
+
+.Item {
+  margin-right: 10px;
+}
