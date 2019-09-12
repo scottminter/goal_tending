@@ -9,6 +9,12 @@
   font-weight: bold;
 }
 
+.Link:hover {
+  /* background: #142e60; */
+  font-weight: bold;
+  cursor: pointer;
+}
+
 .Item {
   margin-right: 10px;
 }
