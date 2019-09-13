@@ -1,8 +1,7 @@
 .Header {
   background: #1D428A;
-  height: 50px;
   color: #FFFFFF;
-  padding: 10px;
+  padding: 15px;
 }
 
 .SiteName {
@@ -13,8 +12,4 @@
   /* background: #142e60; */
   font-weight: bold;
   cursor: pointer;
-}
-
-.Item {
-  margin-right: 10px;
 }

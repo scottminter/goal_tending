@@ -1,15 +1,16 @@
 import React from 'react';
-import {Container} from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import Header from './Header/Header';
+import NewsFeed from './NewsFeed/NewsFeed';
 
 const App = (props) => {
 
   return (
     <>
-    <Header />
-    <Container>
-      Hello World!
-    </Container>
+      <Header />
+      <Container>
+        <NewsFeed />
+      </Container>
     </>
   );
 };
