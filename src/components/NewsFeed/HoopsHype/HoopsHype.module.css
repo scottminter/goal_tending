@@ -2,7 +2,13 @@
     background: lightgrey;
 }
 
-.HoopsHype img {
-    width: 8%;
-    margin: 3px;
+.Thumbnail img {
+    max-width: 30%;
+    margin: 10px;
+    border-radius: 3px;
+    /* max-height:%; */
+}
+
+.Title {
+    font-weight: bold;
 }

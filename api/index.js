@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/feed', (req, res) => {
-    feeds.hoopsHype.getArticles()
+    feeds.hoopsHype.getArticles(3)
         .then((data) => {
             res.json(data);
         })

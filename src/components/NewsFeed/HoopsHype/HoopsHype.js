@@ -42,14 +42,12 @@ const HoopsHype = (props) => {
 
     return (
         <div id={guid} className={style.HoopsHype}>
-            <div>
-                <img src={thumbnail} alt='thumbnail for article'></img>
-                <b>{title}</b>
-                <br />
-                {pubDate}
-            </div>
-            <div>{author}</div>
-            <div><a href={link} target='blank'>{title}</a></div>
+            <span className={style.Thumbnail}><img src={thumbnail} alt='thumbnail for article'></img></span>
+            <span className={style.Title}>{title}</span>
+            <br />
+            {pubDate}
+            {author}
+            <a href={link} target='blank'>{title}</a>
             <button onClick={showContentClickHandler}>Read More...</button>
             <div hidden={hideContent}>{content}</div>
         </div>
