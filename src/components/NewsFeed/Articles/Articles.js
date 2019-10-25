@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Callers from '../../../callers';
 import uuidv4 from 'uuid/v4';
-import Article from '../Article/Article';
+import Article from './Article/Article';
 
 const Articles = props => {
   const { corsProxy } = props;
