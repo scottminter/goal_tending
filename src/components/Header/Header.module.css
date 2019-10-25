@@ -1,0 +1,15 @@
+.Header {
+  background: #1d428a;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.SiteName {
+  font-weight: bold;
+}
+
+.Link:hover {
+  /* background: #142e60; */
+  font-weight: bold;
+  cursor: pointer;
+}
