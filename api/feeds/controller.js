@@ -33,7 +33,3 @@ module.exports = getArticles = (numOfArticles) => {
     });
   });
 };
-
-const sortByDate = (articles) => {
-
-}
