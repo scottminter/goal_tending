@@ -4,23 +4,27 @@
   "private": true,
   "dependencies": {
     "axios": "^0.19.0",
-    "bluebird": "^3.5.5",
+    "bluebird": "^3.7.1",
     "bootstrap": "^4.3.1",
     "express": "^4.17.1",
     "lodash": "^4.17.15",
+    "moment": "^2.24.0",
     "node-html-parser": "^1.1.16",
     "nodemon": "^1.19.2",
     "react": "^16.8.6",
     "react-bootstrap": "^1.0.0-beta.12",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1",
+    "uuid": "^3.3.3",
     "xml2js": "^0.4.22"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint 'src/**/*.{js,jsx}' --fix",
+    "format": "prettier --write 'src/**/*.{js,jsx,css,scss}'"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -36,5 +40,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "prettier-eslint-cli": "^5.0.0"
   }
 }

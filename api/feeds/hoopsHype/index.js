@@ -1,8 +1,8 @@
-const controller = require('./controller');
+const getArticles = require('./getArticles');
 const hoopsHype = {};
 
-hoopsHype.getArticles = (numOfArticles = 1) => {
-    return controller.getArticles(numOfArticles);
+hoopsHype.getArticles = (numOfArticles) => {
+    return getArticles(numOfArticles);
 };
 
 module.exports = hoopsHype;

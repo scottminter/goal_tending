@@ -1,10 +1,9 @@
-import React from 'react';
-import { Container } from 'react-bootstrap';
-import Header from './Header/Header';
-import NewsFeed from './NewsFeed/NewsFeed';
+import React from "react";
+import { Container } from "react-bootstrap";
+import Header from "./Header/Header";
+import NewsFeed from "./NewsFeed/NewsFeed";
 
-const App = (props) => {
-
+const App = props => {
   return (
     <>
       <Header />

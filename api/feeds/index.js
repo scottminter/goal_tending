@@ -1,5 +1,5 @@
 const feeds = {};
 
-feeds.hoopsHype = require('./hoopsHype');
+feeds.getArticles = require('./controller');
 
 module.exports = feeds;

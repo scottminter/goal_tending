@@ -15,7 +15,8 @@ app.get('/', (req, res) => {
 });
 
 app.get('/feed', (req, res) => {
-    feeds.hoopsHype.getArticles()
+    const numOfResults = req.query.total;
+    feeds.getArticles(numOfResults)
         .then((data) => {
             res.json(data);
         })
