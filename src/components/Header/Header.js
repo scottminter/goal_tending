@@ -44,14 +44,6 @@ const Header = props => {
       >
         News
       </Col>
-      <Col
-        sm={1}
-        id={pages.STATS}
-        className={`${style.Link}`}
-        onClick={linkClickedHandler}
-      >
-        Stats
-      </Col>
     </Row>
   );
 };
