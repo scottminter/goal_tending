@@ -13,7 +13,18 @@ const Articles = props => {
         if (resp.data.length > 0) {
           const results = resp.data;
           let newArticles = results.map((article) => {
-            const {author, content, guid, link, thumbnail, title, formattedPubDate, categories, source} = article;
+            const {
+              author,
+              content,
+              guid,
+              link,
+              thumbnail,
+              title,
+              formattedPubDate,
+              categories,
+              source
+            } = article;
+
             return {
               author,
               content,

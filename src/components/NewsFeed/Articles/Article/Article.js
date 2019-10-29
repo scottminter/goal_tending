@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import { Row, Col, Button } from 'react-bootstrap';
 import style from './Article.module.css';
 
-const Article = (props) => {
+const Article = props => {
   const [hideContent, setHideContent] = useState(true);
   const [readMore, setReadMore] = useState('Read More...');
   const {image, link, title, author, pubDate, categories, content, source} = props;

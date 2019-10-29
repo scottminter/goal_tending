@@ -8,8 +8,8 @@ import SportsBasketballRoundedIcon from '@material-ui/icons/SportsBasketballRoun
 const Header = props => {
   const linkClickedHandler = event => {
     const clickedId = event.target.id;
-    console.log('clicked id: ', clickedId);
     const { setCurrentPage } = props;
+
     switch (clickedId) {
       case pages.HOME:
       case pages.NEWS:
