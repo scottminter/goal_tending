@@ -1,21 +1,25 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import style from "./Header.module.css";
-import { NEWS, HOME, STATS } from "./constants";
+import {pages} from '../../constants';
+import Icon from '@material-ui/core/Icon';
+import SportsBasketballRoundedIcon from '@material-ui/icons/SportsBasketballRounded';
 
 const Header = props => {
   const linkClickedHandler = event => {
     const clickedId = event.target.id;
+    console.log('clicked id: ', clickedId);
+    const { setCurrentPage } = props;
     switch (clickedId) {
-      case HOME:
-      case NEWS:
-        console.log("go home/news");
+      case pages.HOME:
+      case pages.NEWS:
+        setCurrentPage(clickedId);
         break;
-      case STATS:
-        console.log("go stats");
+      case pages.STATS:
+        setCurrentPage(clickedId);
         break;
       default:
-        console.log("go default");
+        setCurrentPage(pages.NEWS);
     }
   };
 
@@ -23,15 +27,18 @@ const Header = props => {
     <Row className={style.Header}>
       <Col
         sm={9}
-        id={HOME}
+        id={pages.HOME}
         className={`${style.SiteName} ${style.Link}`}
         onClick={linkClickedHandler}
       >
-        HEADER
+        <Icon className={style.Icon}>
+          <SportsBasketballRoundedIcon />
+        </Icon>
+        GoalTending
       </Col>
       <Col
         sm={1}
-        id={NEWS}
+        id={pages.NEWS}
         className={`${style.Link}`}
         onClick={linkClickedHandler}
       >
@@ -39,7 +46,7 @@ const Header = props => {
       </Col>
       <Col
         sm={1}
-        id={STATS}
+        id={pages.STATS}
         className={`${style.Link}`}
         onClick={linkClickedHandler}
       >

@@ -1,0 +1,1 @@
+export const pages = require('./pages').default;

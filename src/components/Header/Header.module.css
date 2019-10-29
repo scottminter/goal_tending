@@ -8,6 +8,10 @@
   font-weight: bold;
 }
 
+.Icon {
+  margin-right: 5px;
+}
+
 .Link:hover {
   /* background: #142e60; */
   font-weight: bold;
