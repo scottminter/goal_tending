@@ -26,7 +26,7 @@ const Header = props => {
   return (
     <Row className={style.Header}>
       <Col
-        sm={9}
+        xs={9}
         id={pages.HOME}
         className={`${style.SiteName} ${style.Link}`}
         onClick={linkClickedHandler}
@@ -37,7 +37,7 @@ const Header = props => {
         GoalTending
       </Col>
       <Col
-        sm={1}
+        xs={1}
         id={pages.NEWS}
         className={`${style.Link}`}
         onClick={linkClickedHandler}

@@ -1,36 +1,27 @@
 .Article {
   margin-bottom: 10px;
+  padding: 10px;
   background: #F4F4F4;
 }
 
 .Article button {
-  margin-left: 5px;
+  margin-top: 10px;
 }
 
 .Image img {
   width: 100%;
-  padding: 5px;
+  margin-top: 10px;
 }
 
-.Info {
-  /* position: relative; */
-  padding: 15px;
-}
-
-.ShowArticleButton {
-  margin-top: 5px;
-  padding: 10px;
-}
-
-.ArticleBody {
-  padding: 10px;
+.ArticleInfo {
+  padding-left: 15px;
   width: 100%;
 }
 
 .ArticleTitle {
   font-weight: 900;
   font-size: 25px;
-  width: 100%;
+  margin-right: 10px;
 }
 
 .Author {
@@ -39,8 +30,6 @@
 }
 
 .PubDate {
-  margin-top: 5px;
-  margin-bottom: 5px;
   font-weight: 700;
   color: #5A6268;
 }
@@ -48,6 +37,5 @@
 .Categories {
   font-size: small;
   font-weight: 700;
-  color: #5A6268;
+  color: #C80F2E
 }
-

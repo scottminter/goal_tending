@@ -26,7 +26,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint 'src/**/*.{js,jsx}' --fix",
-    "format": "prettier --write 'src/**/*.{js,jsx,css,scss}'"
+    "format": "prettier --write 'src/**/*.{js,jsx,css,scss}'",
+    "deploy": "aws s3 sync build/ s3://goal-tending-prod --acl public-read"
   },
   "eslintConfig": {
     "extends": "react-app"

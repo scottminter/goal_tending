@@ -2,51 +2,21 @@ import React, { useState, useEffect } from "react";
 import Callers from '../../../callers';
 import uuidv4 from 'uuid/v4';
 import Article from './Article/Article';
+import {feed} from '../../../constants';
 
 const Articles = props => {
-  const { corsProxy } = props;
+  const corsProxy = feed.CORS_PROXY;
   const [articles, setArticles] = useState([]);
 
   useEffect(() => {
     Callers.getArticles()
-      .then(resp => {
-        if (resp.data.length > 0) {
-          const results = resp.data;
-          let newArticles = results.map((article) => {
-            const {
-              author,
-              content,
-              guid,
-              link,
-              thumbnail,
-              title,
-              formattedPubDate,
-              categories,
-              source
-            } = article;
-
-            return {
-              author,
-              content,
-              guid,
-              link,
-              thumbnail,
-              title,
-              formattedPubDate,
-              categories,
-              source,
-            };
-          });
-
-          setArticles(
-            [
-              ...newArticles,
-            ]
-          );
-        }
+      .then(articles => {
+        setArticles([
+          ...articles
+        ]);
       })
       .catch(err => {
-        console.error('error: ', err);
+        console.log('error: ', err);
       });
   }, [corsProxy]);
 

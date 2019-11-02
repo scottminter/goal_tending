@@ -1,7 +1,7 @@
-import getArticlesCall from './getArticlesCall';
+import getArticles from './getArticles';
 
-let callers = {};
-
-callers.getArticles = getArticlesCall;
+let callers = {
+  getArticles: getArticles,
+};
 
 export default callers;
